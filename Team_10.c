@@ -106,7 +106,7 @@ void calculateBill(struct Bill *b)
         b->total += menu[i].amount;
     }
 
-    if(b->total >= 330)
+    if(b->total >= 500)
         b->discount = b->total * 10 / 100;
     else
         b->discount = 0;
